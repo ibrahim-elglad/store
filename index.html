@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<body>
+    <header>
+        <div class="heder-top">
+            <div class="contaner">
+               
+               <div class="img">
+                 <a href="#"><img src="logo.png"></a>
+               </div>
+
+
+               <form action="">
+
+                  
+                    <select  id="select">
+                        <option value="all categoreis">all categoreis</option>
+                        <option value="electronic & digital">electronic & digital</option>
+                        <option value="phones & tablet">phones & tablet</option>
+                        <option value="fashion & clothing">fashion & clothing</option>
+                        <option value="televsion & monitor">televsion & monitor</option>
+                        <option value="all categoreis">all categoreis</option>
+                        <option value="watching machine">watching machine</option>
+                        <option value="toys 7 mobbies">toys 7 mobbies</option>
+                    </select>
+                       <input type="text" required placeholder="serch for product">
+                       <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                    </form>
+                                        <div class="heder-right">
+                         <a href="#"><i class="fa-solid fa-cart-shopping"></i> <span class="cart-count">0</span></a>
+                         <a href="#"><i class="fa-regular fa-heart"></i><span class="wish-count">0</span></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+ <div class="heder-bottom">
+                    <div class="contaner">
+                        <button onclick="opencategorylist()" class="menu-btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <span class="menu-text">brawser category</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        
+                        <div class="category_nav_list">
+                            
+                            <a href="#">Electronic & Digital</a>
+                            <a href="#">Phones & Tablets</a>
+                            <a href="#">Fashion & Clothing</a>
+                            <a href="#">Television & Monitor</a>
+                            <a href="#">Washing Machine</a>
+                            <a href="#">Toys & Mobbies</a>
+                            
+                        </div>
+
+
+
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="login">
+                        <button> login <i class="fa-solid fa-right-to-bracket"></i></button>
+                        <button> sing up <i class="fa-solid fa-right-from-bracket"></i></button>
+                        </div>
+                    </div>
+                </div>
+        
+    </header>
+
+    <div class="slider">
+        <div class="contaner">
+
+
+
+            <div class="slid_swepr mySwiper">
+                <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="banner_home1.png" alt=""></a></div>
+      <div class="swiper-slide"><a href="#"><img src="banner_home2.png" alt=""></a></div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+            </div>
+
+
+            <div class="baner2">
+                <a href="#"><img src="banner_home3.png" alt=""></a>
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="baner4">
+    <div class="contaner">
+
+        <div class="baner-item">
+            <a href="#" class="link-btn"></a>
+                <img src="banner3_1.png" alt="">
+                <div class="text">
+                    <h5>break oisc</h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                        <p>up <br> to</p>
+                        <span>70%</span>
+                    </div>
+                    <h6>show now</h6>
+                </div>
+            
+        </div>
+        <div class="baner-item">
+            <a href="#" class="link-btn">
+                </a>
+                <img src="banner3_2.png" alt="">
+              <div class="text">
+                    <h5>break oisc</h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                        <p>up <br> to</p>
+                        <span>70%</span>
+                    </div>
+                    <h6>show now</h6>
+                </div>
+
+        </div>
+        <div class="baner-item">
+            <a href="#" class="link-btn"> </a>
+                <img src="banner3_3.png" alt="">
+              <div class="text">
+                    <h5>break oisc</h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                        <p>up <br> to</p>
+                        <span>70%</span>
+                    </div>
+                    <h6>show now</h6>
+                </div>
+           
+        </div>
+        <div class="baner-item">
+            <a href="#" class="link-btn"></a>
+                <img src="banner3_4.png" alt="">
+              <div class="text">
+                    <h5>break oisc</h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                        <p>up <br> to</p>
+                        <span>70%</span>
+                    </div>
+                    <h6>show now</h6>
+                </div>
+         
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="slider_product slide">
+        <div class="contaner">
+            <div class="slid_product mySwiper">
+                
+                <div class="swiper-wrapper products">
+
+                    <div class="swiper-slide product">
+
+                       <small>50%</small>
+                       <div class="img">
+                        <img src="0.png"></div>
+                       <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                       </div>
+                          <h5 class="name_link">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus consectetur</h5>
+                          <div class="price">
+                           <p><span class="old-price">$100</span></p> 
+                           <p> <span class="new-price">$50</span></p>
+                        </div>
+                       <div class="icon">
+                         <button id="btn" onclick="BuyProduct()" ><i  class="fa-solid fa-cart-plus"></i>add to car</button>
+                        <span ><i onclick="bold(this.id)" id="favorit" class="fa-regular fa-heart"></i></span>
+                       </div>
+                        </div>
+
+                    <div class="swiper-slide product">
+
+                       <small>50%</small>
+                       <div class="img">
+                        <img src="0.png"></div>
+                       <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                       </div>
+                          <h5 class="name_link">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus consectetur</h5>
+                          <div class="price">
+                           <p><span class="old-price">$100</span></p> 
+                           <p> <span class="new-price">$50</span></p>
+                        </div>
+                       <div class="icon">
+                         <button id="btn" onclick="BuyProduct()" ><i  class="fa-solid fa-cart-plus"></i>add to car</button>
+                        <span ><i onclick="bold(this.id)" id="favorit" class="fa-regular fa-heart"></i></span>
+                       </div>
+                        </div>
+                    
+                        
+                 
+                   
+                      
+                   
+
+
+
+                   
+
+
+
+
+
+
+
+
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="swiper.js"></script>
+</body>
+</html>

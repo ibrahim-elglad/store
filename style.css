@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.heder-top{
+    width: 100%;
+}
+input,button{
+    outline: none;
+    border: none;
+}
+button{
+     background-color: #ff6730;
+
+}
+img{
+width: 150px;
+}
+    
+body{
+    padding-top: 150px;
+}
+.contaner{
+    width: 90%;
+    max-width: 1350px;
+    margin:  auto;
+
+}
+
+header{
+    background-color: #fff;
+position: fixed;
+z-index: 999;
+top: 0;
+left: 0;
+right: 0;    
+}
+header .heder-top .contaner{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heder-top .contaner form select{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color:  rgba(226, 226, 226, 0.305);
+    padding: 10px 8px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.heder-top .contaner form select option{
+    text-transform: capitalize;
+    padding: 10px 8px ;
+    background-color:  rgba(226, 226, 226, 0.305);
+    color: #000;
+}
+.heder-top .contaner form{
+    height: 40px;
+    transform: translateX(15%);
+    width: 540px;
+    background-color:  rgba(226, 226, 226, 0.655);
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.heder-top .contaner form input{
+    width: 250px;
+    height: 40px;
+  background-color:  rgba(226, 226, 226, 0.305);
+    padding-left: 10px;
+    font-size: 16px;
+}
+header .heder-bottom{
+    border-top: 2px solid #6461605a;
+}
+.heder-top .contaner form button{
+    width: 45px;
+    height: 45px;
+    background-color: #ff6730;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.heder-top .contaner .heder-right{
+  width: 200px ;
+text-align: center;
+    height: 40px;
+}
+.heder-top .contaner .heder-right a{
+    color: #000000;
+    position: relative;
+    margin-right: 20px;
+
+}
+.heder-top .contaner .heder-right a i{
+    margin-top: 10px;
+    font-size: 22px;
+   
+
+}
+.heder-top .contaner .heder-right a  span{
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    background-color: #ff6730;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* header botom */
+
+header .heder-bottom .contaner{
+    box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 0px 5px 0px ;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.heder-bottom .contaner .menu-btn{
+    background-color: #ff6730;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    width: 180px;
+    height: 45px;
+    border-radius: 8px;
+    margin: 0 0 4px 4px ;
+    padding: 0 0 0 10px;
+
+} 
+.heder-bottom .contaner .menu-btn:hover{
+    background-color: #e65c2f;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #011b4f;
+}
+.heder-bottom .contaner .menu-btn  i{
+    font-size: 14px;
+}
+.heder-bottom .contaner .menu-btn span{
+    padding: 0 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.heder-bottom .contaner nav ul li{
+    position: relative;
+   text-align: center;
+    margin-right: 20px;
+    
+}
+ .heder-bottom .contaner nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 0 0 0 ;
+}
+.heder-bottom .contaner nav ul li a:hover{
+    color: #ff6730;
+}
+.heder-bottom .contaner .login{
+    margin-right: 20px;
+}
+.heder-bottom .contaner .login button{
+    width: 100px;
+    height: 40px;
+    background-color: #ff6730;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+.heder-bottom .contaner .login button:hover{
+    background-color: #e65c2f;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ff6730;
+}
+.heder-bottom .contaner nav ul .active{
+    color: #ff6730;
+}
+.heder-bottom .contaner .category_nav_list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 13.8%;
+    background: #fff;
+    border: 1px solid #999;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+opacity: 0;
+   transition: .3s  ease-in-out;
+}
+.heder-bottom .contaner .category_nav_list.active{
+ opacity: 1;
+    
+}
+.heder-bottom .contaner .category_nav_list a{
+    
+    text-decoration: none;
+   padding: 14px 10px;
+    font-size: 14px;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+.heder-bottom .contaner .category_nav_list a:hover{
+    background-color: #b7b6b6b9;
+    color: #000000;
+    border-bottom: 0;
+}
+
+
+
+.slider{
+
+    position: relative;
+}
+
+.slider .contaner{
+  display: flex;
+  justify-content: space-between;
+}
+.slider .baner2{
+    width: 23%;
+    height: 100%;
+}
+.slider .baner2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .baner2 a{
+    width: 100%;
+    height: 100%;
+}
+.slider .contaner .slid_swepr{
+    width: 75%;
+    overflow: hidden;
+}
+.slider .contaner .slid_swepr .swiper-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+slider .contaner .slid_swepr span{
+    background-color: #fff;
+    color: #000;
+}
+.slider .contaner .slid_swepr .swiper-pagination{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.slider .contaner .slid_swepr .swiper-pagination span{
+background-color: #fff;
+opacity: 1;
+position: absolute;
+left: 50%;
+bottom: 5px;
+}
+.swiper-pagination-bullet-active{
+background: #ff6730 !important;
+width: 34px !important;
+height: 8px !important;
+    border-radius: 30px !important;
+}
+.baner4{
+    position: relative;
+    margin: 30px 0;
+}
+.baner4 .contaner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.baner4 .contaner .baner-item{
+    width: 24%;
+    height: 100%;
+    background:url("bg_banner3.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+    padding: 12px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.baner4 .contaner .baner-item:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.baner4 .contaner .baner-item img{
+    width: 150px;
+}
+.baner4 .contaner .baner-item .text{
+    width: 70%;
+    padding: 10px 8px;
+}
+.baner4 .contaner .baner-item .text h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.baner4 .contaner .baner-item .text .sale{
+    display:  flex;
+    align-items: center;
+    gap: 5px;
+    margin: 7px 0;
+}
+.baner4 .contaner .baner-item .text .sale p{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.baner4 .contaner .baner-item .text .sale span{
+    font-size:25px;
+    padding-left: 5px;
+    font-weight: bold;
+    color: #ff6730;
+}
+ .baner4 .contaner .baner-item .link-btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.baner4 .contaner .baner-item .text h6{
+    font-size: 14px;
+    font-weight: bold;
+}
+/* swiper sild */
+
+.mySwiper{
+    overflow: hidden;
+
+}
+.product{
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    border-radius: 8px;
+  position: relative;
+  padding: 20px 20px ;
+}
+.product small{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+.product .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+   
+}
+.product .img img{
+    width: 150px;
+    height: 120px;
+    border-radius: 8px 8px 0 0;
+    padding: 5px 0;
+}
+.product .star i{
+    color: #ff6730;
+    font-size: 18px;
+    padding-bottom:8px;
+}
+.product h5{
+    width: 250px;
+    letter-spacing: 1px;
+    
+}
+.product h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.product .price{
+
+ font-weight: bold;
+ padding: 5px 0;
+ font-size: 20px;
+}
+.product .price p .old-price{
+    font-size: 16px;
+    color: #ff0000;
+    padding-left: 5px;
+    text-decoration:line-through;
+}
+.product .price p .new-price{
+    font-size: 18px;
+    color: #01620c;
+    padding-left: 5px;
+}
+.product .icon{
+    margin-bottom: 10px;
+}
+.product .icon button{
+    padding: 10px 18px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    border: 2px solid #ff6730;
+    border-radius: 5px;
+}
+.product .icon button:hover{
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #ff5719;
+    transition: .2s ease-in-out;
+}
+.product .icon button i:hover{
+    color: #000000;
+
+}
+.product .icon button i{
+    padding-right: 10px;
+    font-size: 20ox;
+}
+.product .icon i{
+    font-size: 19px;
+    margin-left: 5px;
+}
+.product .icon  i:hover{
+    color: #ff6730;
+    transition: .2s ease-in-out;
+    font-weight: bold;
+
+}
